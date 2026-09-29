@@ -130,3 +130,27 @@ descriptive filenames and alt text. Delete the theme-demo leftovers
 `blog-thumb-single*`, `author-thumb-1*`). Convert the 450–715 KB hash-named
 PNGs to WebP. In the site root, remove `default.php`, `.htaccess.bk`,
 `.htaccess_original` and `readme.html`.
+
+## Applied in Elementor (2026-09-29)
+
+Done through the Elementor MCP connection and published:
+- **Location pages** (Brampton #40, General Rd #42, Cawthra #1478): new
+  "Visit ApolloGrip Tires …" section above the map with address, hours,
+  click-to-call phone, and Directions / Google reviews buttons.
+- **Locations overview** (#38) and **Contact** (#35): new "three branches"
+  section with each branch's NAP and hours, linking all three location pages
+  (Cawthra Rd included).
+- **Main Footer** (#330): "Our locations" line linking all three branches.
+- The live site shows General Rd as L4W 1G8 on every page checked.
+
+Not possible through this connection, so these still need to be done by hand:
+- **Schema (Step 3):** there is no atomic HTML widget, and Custom Code
+  snippets can't be edited through the connector. Paste each `schema-*.html`
+  into an HTML widget on its location page in the Elementor editor.
+- **Legacy (V3) widgets are read-only through the connector**: the existing
+  page text, FAQ accordions, icon boxes and forms. That covers the Step 4
+  rewrites (garage and "thousands of treads" claims) and turning the /shop/
+  pages into quote forms.
+- Everything outside Elementor: redirects (Step 1), Nexter snippets (Step 2),
+  the tagline (Settings → General), blog consolidation (Step 5) and media
+  cleanup (Step 6).
