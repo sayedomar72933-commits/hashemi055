@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "apollogrip-tires-elementor": {
+      "type": "http",
+      "url": "https://apollogriptires.com/wp-json/elementor/mcp/",
+      "headers": {
+        "Authorization": "Basic ${APOLLO_WP_AUTH}"
+      }
+    }
+  }
+}
